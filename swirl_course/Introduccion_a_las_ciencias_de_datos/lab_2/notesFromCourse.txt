@@ -1,0 +1,21 @@
+read.table() con problemas de big data puede causar problemas porque lo carga en memoria RAM
+
+read.csv() lee de una vez con sep=","
+
+parametros importantes:
+
+	* na.strings = 'a' - coloca el caracter 'a' cuando el campo esta vacio.
+	* nrows = n - toma n registros de la data.
+	* quote = "" - significa no comentarios
+
+
+
+---
+
+for xls:
+
+	read.xls2 es mas rapido que read.xlsx pero es inestable para hacer subsetting 
+
+	XLConnect paquete para 
+
+	buscar sobre data.table o revisar la presentacion de nuevo

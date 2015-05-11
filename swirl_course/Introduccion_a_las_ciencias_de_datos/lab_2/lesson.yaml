@@ -1,0 +1,46 @@
+- Class: meta
+  Course: Introduccion a la Ciencia de Datos
+  Lesson: Extraccion de datos
+  Author: Grupo docente de CCPD
+  Organization: UCV
+  Type: Standar
+  Version: 1.0
+
+- Class: text
+  Output: "En esta leccion veremos algunos comandos de R que permiten la extraccion de diferentes formatos de datos."
+
+- Class: text
+  Output: "En caso de alguna duda sobre temas especificos de r puede usar el comando help.start() ."
+
+- Class: text
+  Output: "Veamos algunos de los comandos que nos permiten la extraccion de diferentes formatos... "
+  
+- Class: figure
+  Output: "Si aparece en un editor conveniente y todo bien...bien. Si no, deberia haber un archivo llamado 'init_data.R' En el subdirectorio 'swirl_temp' de tu directorio actual, puedes abrirlo entonces con tu editor favorito. lamentamos los inconvenientes."
+  Figure: display_code.R
+  FigureType: new
+  
+- Class: mult_question
+  Output: "Que creen que haga el comando  install.packages(xlsx) ?"
+  AnswerChoices: Instala el paquete xlsx;Carga el paquete xlsx;importa el paquete xlsx ya descargado
+  CorrectAnswer: Instala el paquete xlsx
+  AnswerTests: omnitest(correctVal= 'Instala el paquete xlsx')
+  Hint: "Traducir"
+  
+- Class: exact_question
+  Output: "Entonces en que linea se encuentra la primera aparicion del comando que permite cargar los paquetes?"
+  CorrectAnswer: 20
+  AnswerTests: omnitest(correctVal=20)
+  Hint: "Traduce alguna palabra que pueda referir algun paquete"
+
+- Class: cmd_question
+  Output: "Veamos como cargar algunos datos...introduce fileDest <- './data/raw2.xml'"
+  CorrectAnswer: fileDest <- "./data/raw2.xml"
+  AnswerTests: any_of_exprs('fileDest <- "./data/raw2.xml"')
+  Hint: " escribe fileDest <- './data/raw2.xml'."
+  
+
+
+
+
+
